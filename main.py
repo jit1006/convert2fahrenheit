@@ -1,5 +1,5 @@
 import streamlit as st
-def compute(input(" Enter degree in celsius : " , celsius)):
+def compute(" Enter degree in celsius : " , celsius):
     #coverting c to f
     c = int(celsius)
     f = (c * 1.8) + 32
