@@ -1,13 +1,10 @@
 import streamlit as st
-def compute():
+def compute(input(" Enter degree in celsius : " , celsius)):
     #coverting c to f
-    #c = int(celsius)
-    fahrenheit = (c * 1.8) + 32
+    c = int(celsius)
+    f = (c * 1.8) + 32
     #print("fahrenheit : " , fahrenheit ,"F")
-    return fahrenheit
-c = st.number_input('celsius')
-f = compute( c )
-st.write('Enter the temperature in celsius(C): ', f)
-
+#     f = st.number_input('celsius')
+    st.write('Enter the temperature in celsius(C): ', f)
 # compute(input("Enter the temperature in celsius(C): "))
 
