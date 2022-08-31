@@ -10,17 +10,10 @@ f = (c * 1.8) + 32
 
 st.write('The Fahrenheit temperature is ', f )
 d = int(f)
-st.header("Display the metric")
+st.header("Temperature metric")
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Temperature", d , "1.2 °F")
+col1.metric("Temperature", d "f" , "1.2 °F")
 col2.metric("Wind", "9 mph", "-8%")
 col3.metric("Humidity", "86%", "4%")
 
-st.header("Temperature Chart ")
-
-chart_data = d.DataFrame(
-     np.random.randn(20, 3),
-     columns=['a', 'b', 'c'])
-
-st.line_chart(chart_data)
